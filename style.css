@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* header section styles */
+header{
+    width: 100%;
+    height: 698px;
+    background-image: url("image/Hero-bg.png");
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.navber{
+    width: 1140px;
+    height: 151px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+}                                                      .navber h1{
+    font-weight: bold;
+    color: #4E47FF;
+    font-size: 34px;
+}                                                
+.btn{
+    width: 132px;
+    height: 48px;
+    background-color: #4E47FF;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text-content{
+    width: 905px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 37px;
+}
+.text-content h1{
+    font-weight: bold;
+    font-size: 65px;
+    color: #252432;
+    height: 152px;
+    text-align: center;
+}
+.text-content button{
+    display: block;
+    width: 174px;
+    margin: 0 auto;
+}
+
+
+/* banner section styles */
+#banner-section{
+    width: 1140px;
+    height: 328px;
+    display: flex;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+.text-area {
+    display: flex;
+    flex-direction: column; 
+    gap: 23px;
+}
+
+.text-area h2{
+    color: #252432;
+    font-weight: bold;
+    font-size: 49px;
+}
+.text-area p{
+    width: 517px;
+    font-size: 24px;
+    color: rgba(41, 36, 50, 0.5);
+}
+.text-area button{
+    width: 229px;
+}
+#banner-section img{
+    width: 403px;
+    height: 328px;
+    border-radius: 48px;
+}
