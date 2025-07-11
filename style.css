@@ -39,6 +39,13 @@ header{
     width: 132px;
     height: 48px;
     background-color: #4E47FF;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: yellow;
     color: #FFFFFF;
     font-weight: bold;
     border-radius: 10px;
@@ -258,6 +265,7 @@ border-radius: 10px;
 gap: 10px;
 padding-left: 15px;
 font-size: 20px;
+border: 1px solid #8987A1;
 }
 .main-contact-section textarea{
     width: 497px;
@@ -265,6 +273,7 @@ font-size: 20px;
     border-radius: 10px;
     padding-left: 15px;
     font-size: 20px;
+    border: 1px solid #8987A1;
 }
 .main-contact-section button{
     width: 497px;
