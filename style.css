@@ -77,6 +77,8 @@ header{
 .text-area {
     display: flex;
     flex-direction: column; 
+    align-items: center;
+    justify-content: center;
     gap: 23px;
 }
 
@@ -202,7 +204,7 @@ header{
 .text-area p{
     width: 517px;
     font-size: 24px;
-    color: rgba(41, 36, 50, 0.5);
+    color: #8987A1;
 }
 .optional-text-area button{
     width: 195px;
@@ -262,9 +264,53 @@ font-size: 20px;
     height: 135px;
     border-radius: 10px;
     padding-left: 15px;
-font-size: 20px;
+    font-size: 20px;
 }
 .main-contact-section button{
     width: 497px;
     height: 62px;
+}
+
+
+/* footer section styles */
+
+footer{
+    width: 100%;
+    height: 428px;
+    background-color: #FFFFFF;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-footer h1{
+    font-weight: bold;
+    font-size: 100px;
+    color: #4E47FF;
+  
+}
+.main-footer p{
+    width: 531px;
+    color: #8987A1;
+}
+.footer-nav{
+    padding-top: 20px;
+}
+.footer-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+.footer-nav li{
+    list-style: none;
+    color: #8987A1;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #8987A1;
+    font-weight: bold;
 }
