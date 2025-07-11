@@ -129,3 +129,79 @@ header{
     justify-content: space-between;
     width: 856px;
 }
+
+
+/* Productive user section styles */
+#productive-user-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+}
+#productive-user-section h1{
+    padding-bottom: 50px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+}
+.box-section{
+    width: 366.67px;
+    height: 243px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+/* optional banner section styles */
+#optional-banner-section{
+    width: 1140px;
+    height: 696.77px;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: column;
+    margin: 100px auto;
+    gap: 20px;
+    background-color: #FFFFFF;
+}
+.optional-text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 23px;
+    margin: 0 atuo;
+}
+
+.optional-text-area h2{
+    color: #252432;
+    font-weight: bold;
+    font-size: 49px;
+}
+.text-area p{
+    width: 517px;
+    font-size: 24px;
+    color: rgba(41, 36, 50, 0.5);
+}
+.optional-text-area button{
+    width: 195px;
+}
+#optional-banner-section img{
+    width: 840px;
+    height: 364.77px;
+    border-radius: 48px;
+    margin: 0 auto;
+}
