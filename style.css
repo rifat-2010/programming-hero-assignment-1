@@ -9,10 +9,7 @@ body{
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  
 }
 /* header section styles */
 header{
@@ -30,7 +27,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     margin: 0px auto;
-}                                                      .navber h1{
+} 
+    .navber h1{
     font-weight: bold;
     color: #4E47FF;
     font-size: 34px;
@@ -53,7 +51,7 @@ header{
 }
 .text-content{
     width: 905px;
-    height: 237px;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -75,8 +73,8 @@ header{
 
 /* banner section styles */
 #banner-section{
-    width: 1140px;
-    height: 328px;
+    max-width: 1140px;
+    height: auto;
     display: flex;
     margin: 100px auto;
     justify-content: space-between;
@@ -112,8 +110,8 @@ header{
 /* action section styles */
 
 #action-section{
-    width: 1140px;
-    height: 306px;
+    max-width: 1140px;
+    padding: 50px 80px;
     margin: 100px auto;
     background-color: rgba(78, 71, 255, 0.1);
     display: flex;
@@ -182,10 +180,9 @@ header{
 }
 /* optional banner section styles */
 #optional-banner-section{
-    width: 1140px;
-    height: 696.77px;
+    max-width: 1140px;
+    padding: 71px 150px;
     display: flex;
-    margin: 100px auto;
     flex-direction: column;
     margin: 100px auto;
     gap: 20px;
@@ -226,8 +223,8 @@ header{
 
 /* Contact section  styles */
 #contact-section{
-    width: 1140px;
-    height: 632px;
+    max-width: 1140px;
+    padding: 71px 0 71px 0;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -268,7 +265,7 @@ font-size: 20px;
 border: 1px solid #8987A1;
 }
 .main-contact-section textarea{
-    width: 497px;
+    max-width: 497px;
     height: 135px;
     border-radius: 10px;
     padding-left: 15px;
@@ -285,7 +282,7 @@ border: 1px solid #8987A1;
 
 footer{
     width: 100%;
-    height: 428px;
+    padding: 104px 455px 103px 454px;
     background-color: #FFFFFF;
      display: flex;
     flex-direction: column;
@@ -322,4 +319,78 @@ footer{
     text-decoration: none;
     color: #8987A1;
     font-weight: bold;
+}
+.display{
+    display: none;
+}
+/* mobile screen responsive styles */
+@media screen and (max-width: 576px) {
+.navber, .text-content{
+    align-items: center;
+    width: 100%;
+}
+.text-content .btn{
+position: absolute;
+top: 580px;
+}
+#banner-section, #box-section, .box, #contact-section{
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+#optional-banner-section, footer{
+    width: 100%;
+    padding: 0;
+    margin: 100px 0;
+    border-radius: 0;
+  }
+  #contact-section{
+     align-items: flex-start
+  }
+  #optional-banner-section img, .main-footer, .main-footer p{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .main-footer{
+    padding: 104px 0;
+  }
+  #contact-section h1{
+    width: 100%;
+    font-size: 50px;
+  }
+
+}
+
+/* medium device responsive styles */
+@media screen and (min-width: 577px) and (max-width: 767px){
+    .navber, .text-content, .main-footer p{
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.text-content .btn{
+position: absolute;
+top: 580px;
+}
+#banner-section, #box-section, .box, #contact-section{
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+#optional-banner-section, footer {
+    width: 100%;
+    padding: 0;
+    margin: 100px 0;
+    border-radius: 0;
+  }
+
+  #optional-banner-section img, .main-footer{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .main-footer{
+    padding: 104px 0;
+  }
 }
