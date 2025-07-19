@@ -44,7 +44,7 @@ header{
 }
 .btn:hover{
     background-color: yellow;
-    color: #FFFFFF;
+    color: #191970;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -97,7 +97,7 @@ header{
     color: rgba(41, 36, 50, 0.5);
 }
 .text-area button{
-    max-width: 229px;
+    width: 229px;
 }
 #banner-section img{
     max-width: 403px;
