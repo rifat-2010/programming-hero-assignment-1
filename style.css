@@ -21,7 +21,7 @@ header{
 }
 
 .navber{
-    width: 1140px;
+    max-width: 1140px;
     height: 151px;
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@ header{
     cursor: pointer;
 }
 .text-content{
-    width: 905px;
+    max-width: 905px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,6 @@ header{
     font-weight: bold;
     font-size: 65px;
     color: #252432;
-    height: 152px;
     text-align: center;
 }
 .text-content button{
@@ -93,15 +92,15 @@ header{
     font-size: 49px;
 }
 .text-area p{
-    width: 517px;
+    max-width: 517px;
     font-size: 24px;
     color: rgba(41, 36, 50, 0.5);
 }
 .text-area button{
-    width: 229px;
+    max-width: 229px;
 }
 #banner-section img{
-    width: 403px;
+    max-width: 403px;
     height: 328px;
     border-radius: 48px;
 }
@@ -159,7 +158,7 @@ header{
     gap: 20px;
 }
 .box-section{
-    width: 366.67px;
+    max-width: 366.67px;
     height: 243px;
     background-color: #FFFFFF;
     border-radius: 14px;
@@ -281,7 +280,7 @@ border: 1px solid #8987A1;
 /* footer section styles */
 
 footer{
-    width: 100%;
+    max-width: 100%;
     padding: 104px 455px 103px 454px;
     background-color: #FFFFFF;
      display: flex;
@@ -329,11 +328,7 @@ footer{
     align-items: center;
     width: 100%;
 }
-.text-content .btn{
-position: absolute;
-top: 580px;
-}
-#banner-section, #box-section, .box, #contact-section{
+#banner-section, #box-section, .box, #contact-section, .text-content{
     flex-direction: column;
     width: 100%;
     gap: 20px;
@@ -361,7 +356,7 @@ top: 580px;
     padding: 40px 20px;
   }
 
-  .main-contact-section {
+  .main-contact-section, .text-area, #productive-user-section, #optional-banner-section {
     width: 100%;
     padding: 0 10px;
   }
@@ -374,7 +369,7 @@ top: 580px;
     box-sizing: border-box;
   }
 
-  #contact-section h1 {
+  #contact-section h1, #optional-banner-section h2{
     font-size: 40px;
     width: 100%;
     text-align: left;
@@ -414,5 +409,37 @@ top: 580px;
   }
   .main-footer{
     padding: 104px 0;
+  }
+}
+/* learge screen responsive styles */
+@media screen and (min-width: 768px) and (max-width: 990px){
+ #banner-section, #box-section, .box, #contact-section{
+    width: 100%;
+    gap: 20px;
+}   
+  #optional-banner-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 930px){
+    #banner-section, #contact-section input, #banner-section p{
+    width: 100%;
+    gap: 20px;
+    max-width: 100%;
+} 
+.text-area, #banner-section img{
+    width: 417px;
+}
+ footer{
+    padding: 105px 0;
+ }
+ .main-contact-section input,
+  .main-contact-section textarea,
+  .main-contact-section button {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
