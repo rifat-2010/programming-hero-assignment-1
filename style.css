@@ -328,10 +328,12 @@ footer{
     align-items: center;
     width: 100%;
 }
-#banner-section, #box-section, .box, #contact-section, .text-content{
+#banner-section, #box-section, .box, #contact-section, .text-content, .footer-nav ul{
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 #optional-banner-section, footer{
     width: 100%;
@@ -369,11 +371,12 @@ footer{
     box-sizing: border-box;
   }
 
-  #contact-section h1, #optional-banner-section h2{
+  #contact-section h1, #optional-banner-section h2, .text-content h1{
     font-size: 40px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
+    display: flex;
   }
 
 
@@ -394,6 +397,8 @@ top: 580px;
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 #optional-banner-section, footer {
     width: 100%;
